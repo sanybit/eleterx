@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>eleterx</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Мгновенные сообщения" />
+	<meta name="keywords" content="сообщения, общение" />
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+	<link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+	<div class="left">
+		<div class="contacts">
+			<header>
+				<form name="form_search" action="#" method="get">
+					<input id="search" type="text" name="search" placeholder="Поиск" />
+					<input type="submit" name="submit_search" value="" title="искать" />
+				</form>
+			</header>
+			<section>
+				<div class="interlocutor active">
+					<div class="avatar"></div>
+					<p class="login">Sany</p>
+				</div>
+				<div class="interlocutor">
+					<div class="avatar"></div>
+					<p class="login">Alex</p>
+				</div>
+				<div class="interlocutor">
+					<div class="avatar"></div>
+					<p class="login">Bobin robin</p>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="center">
+		<header>
+			<div class="name">
+				<p class="login">Sany</p>
+				<p class="time">В сети</p>
+			</div>
+		</header>
+		<section>
+			<h3>11 декабря</h3>
+			<div class="sender">
+				<span>
+					<p class="message">Привет! Как делишки?</p>
+					<p class="time">17:00</p>
+				</span>
+			</div>
+			<div class="sender">
+				<span>
+					<p class="message">Пишу тебе сообщение</p>
+					<p class="time">17:05</p>
+				</span>
+			</div>
+			<div class="recipient">
+				<span>
+					<p class="message">Привет. Норм.</p>
+					<p class="time">17:10 <i class='check'></i><i class='check check2'></i></p>
+				</span>
+			</div>
+			<div class="recipient">
+				<span>
+					<p class="message">Сам как поживаешь, чем занимешся в свободное от работы время? 
+					Напиши мне подробно, не ленись писать много. Пиши больше и подробнее как только сможешь. 
+					Больше текста пиши.
+					</p>
+					<p class="time">17:15 <i class='check'></i><i class='check check2'></i></p>
+				</span>
+			</div>
+			<div class="sender">
+				<span>
+					<p class="message">Написал тебе сообщенице, хочу чтобы ты его прочитал внимательно.
+					И потом мне также подробно на него ответил. Приступай к чтению. Не ленись его читать внимательно.
+					</p>
+					<p class="time">17:45</p>
+				</span>
+			</div>
+			<div class="recipient">
+				<span>
+					<p class="message">Прочёл твоё сообщение</p>
+					<p class="time">18:10 <i class='check'></i><i class='check check2'></i></p>
+				</span>
+			</div>
+			<div class="recipient">
+				<span>
+					<p class="message">Прочёл твоё сообщение</p>
+					<p class="time">18:10 <i class='check'></i><i class='check check2'></i></p>
+				</span>
+			</div>
+			<div class="recipient">
+				<span>
+					<p class="message">Прочёл твоё сообщение</p>
+					<p class="time">18:10 <i class='check'></i><i class='check check2'></i></p>
+				</span>
+			</div>
+			<div class="recipient">
+				<span>
+					<p class="message">Прочёл твоё сообщение</p>
+					<p class="time">18:10 <i class='check'></i><i class='check check2'></i></p>
+				</span>
+			</div>
+			<div class="sender">
+				<span>
+					<p class="message">Написал тебе сообщенице, хочу чтобы ты его прочитал внимательно.
+					И потом мне также подробно на него ответил. Приступай к чтению. Не ленись его читать внимательно.
+					</p>
+					<p class="time">17:45</p>
+				</span>
+			</div>
+		</section>
+		<footer>
+			<form name="form_send" action="#" method="get">
+				<div id="textarea" class="textarea" contentEditable="true" ></div>
+				<input type="submit" name="submit_send" value="" />
+			</form>
+		</footer>
+	</div>
+	<div class="right_basic">
+		<div class="info">
+			<h3>Информация</h3>
+			<div class="interlocutor">
+				<div class="avatar"></div>
+				<p class="login">Sany</p>
+			</div>
+		</div>
+		<div class="settings">
+			<h3>Шифрование</h3>
+			<div class="key" contentEditable="true"></div>
+		</div>
+	</div>
+	<div class="fixed_elements">
+		<div class="down">
+			<div class="score" title="есть непрочитанные сообщения" ></div>
+			<a href="#textarea" title="вниз" >Вниз</a>
+		</div>
+		<div class="right">
+			<div class="setting" title="настройки чата">&#8942;</div>
+			<div class="hover"></div>
+			<div class="info">
+				<h3>Информация</h3>
+				<div class="interlocutor">
+					<div class="avatar"></div>
+					<p class="login">Sany</p>
+				</div>
+			</div>
+			<div class="settings">
+				<h3>Шифрование</h3>
+				<div class="key" contentEditable="true"></div>
+			</div>
+		</div>
+		<div class="left_menu">
+			<div class="menu menus">≡</div>
+			<div class="profile">
+				<div class="avatar"></div>
+				<p class="login">Sany</p>
+			</div>
+			<ul>
+				<li class="chat">
+				Чаты
+					<div class="chat_submenu">
+						<div class="interlocutor active">
+							<div class="avatar"></div>
+							<p class="login">Sany</p>
+						</div>
+						<div class="interlocutor">
+							<div class="avatar"></div>
+							<p class="login">Alex</p>
+						</div>
+						<div class="interlocutor">
+							<div class="avatar"></div>
+							<p class="login">Bobin robin</p>
+						</div>
+					</div>
+				</li>
+				<li class="theme">
+				Тема
+					<ul class="theme_submenu">
+						<li>Тема1</li>
+						<li>Тема2</li>
+						<li>Тема3</li>
+					</ul>
+				</li>
+				<li class="settings_menu">
+				Настройки
+					<ul class="settings_submenu">
+						<li>ry6uy</li>
+						<li>rrfkduuy</li>
+						<li>ryt43uy</li>
+						<li>ryt87uy</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
