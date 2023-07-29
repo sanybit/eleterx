@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Geologica";
+	src: url("../fonts/Geologica.ttf") format("ttf"), url("../fonts/Geologica.woff") format("woff");
+}
+@font-face {
+	font-family: "Geologica_weit";
+	src: url("../fonts/Geologica_weit.ttf") format("ttf"), url("../fonts/Geologica_weit.woff") format("woff");
+}
+@font-face {
+	font-family: "Lineyka";
+	src: url("../fonts/Lineyka.ttf") format("ttf"), url("../fonts/Lineyka.woff") format("woff");
+}
+@font-face {
+	font-family: "Noah";
+	src: url("../fonts/Noah.ttf") format("ttf"), url("../fonts/Noah.woff") format("woff");
+}
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+}

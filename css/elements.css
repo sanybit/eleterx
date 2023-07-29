@@ -1,0 +1,247 @@
+
+.fixed_elements .left_menu .menu {
+	position: fixed;
+	top: 8px;
+	left: 10px;
+	z-index: 102;
+	transition-property: top;
+	transition-duration: 0.5s;
+}
+
+.fixed_elements .left_menu:hover {
+	left: 0;
+	transition-property: left;
+	transition-duration: 0.5s;
+}
+
+.fixed_elements .left_menu:hover .menu {
+	top: -30px;
+	transition-duration: 0.5s;
+	
+}
+
+/*------Setting_start--------*/
+.fixed_elements .right .setting {
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	z-index: 101;
+}
+
+.fixed_elements .right .setting:hover {
+	cursor: pointer;
+}
+
+.fixed_elements .right {
+	width: 240px;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	z-index: 110;
+	transition-property: right;
+	transition-duration: 0.5s;
+}
+
+.fixed_elements .right:hover {
+	right: 0;
+	transition-duration: 0.5s;
+}
+
+.fixed_elements .right .hover {
+	width: 100%;
+	height: 55px;
+}
+
+.fixed_elements .right h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+
+.fixed_elements .right .info {
+	width: 100%;
+	position: fixed;
+	/*background-color: #ddd;*/
+	padding: 10px;
+	border-radius: 3px;
+	/*box-shadow: 0 0 5px #555;*/
+}
+
+.fixed_elements .right .info .interlocutor {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+
+.fixed_elements .right .info .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	/*background-color: #0f0;*/
+	margin-right: 5px;
+}
+
+.fixed_elements .right .info .interlocutor .login {
+	font-size: 14pt;
+}
+
+.fixed_elements .right .settings {
+	width: 100%;
+	position: fixed;
+	background-color: #ddd;
+	margin-top: 108px;
+	padding: 10px;
+	box-shadow: 0 0 5px #0f0;
+	border-radius: 3px;
+}
+
+.fixed_elements .right .settings .key {
+	padding: 4px;
+	width: 220px;
+	height: 100px;
+	background-color: #aaa;
+	border-radius: 5px;
+}
+.fixed_elements .right .settings .key:hover {
+  cursor: pointer;
+}
+
+/*------Setting_end--------*/
+
+.fixed_elements .down {
+	position: fixed;
+	bottom: 50px;
+	left: 245px;
+}
+
+.fixed_elements .down .score {
+	width: 10px;
+	height: 10px;
+	/*background-color: rgb(255, 0, 0, 0.7);*/
+	border-radius: 5px;
+	position: relative;
+	top: 10px;
+	left: 28px;
+}
+
+.fixed_elements .down a {
+	display: block;
+	width: 40px;
+	height: 28px;
+	/*background-color: rgb(100, 100, 100, 0.5);*/
+	border-radius: 20px;
+	text-decoration: none;
+	/*color: #fff;*/
+	text-align: center;
+	padding-top: 12px;
+}
+
+/*-------Menu_start--------*/
+.fixed_elements .left_menu {
+	width: 240px;
+	/*background-color: #AD82FD;*/
+	position: fixed;
+	left: -245px;
+	top: 0;
+	z-index: 110;
+	transition-property: left;
+	transition-duration: 0.5s;
+}
+
+.fixed_elements .left_menu .profile {
+	display: flex;
+	margin-bottom: 40px;
+	/*background-color: #33f;*/
+	padding: 20px 5px 20px 30px;
+}
+
+.fixed_elements .left_menu .profile .login {
+	font-size: 18px;
+	margin: 10px 20px 0 10px;
+}
+
+.fixed_elements .left_menu .profile .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	/*background-color: #ff0;*/
+	margin-right: 5px;
+}
+
+.fixed_elements .left_menu ul {
+	margin-bottom: 60px;
+}
+
+.fixed_elements .left_menu ul li {
+	font-size: 16px;
+	padding: 10px 0 10px 30px;
+}
+
+.fixed_elements .left_menu ul li:hover {
+	/*background-color: #eee;*/
+}
+/*--------------------------------------------------*/
+.fixed_elements .left_menu ul .chat:hover .chat_submenu {
+	display: block;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu {
+	display: none;
+	width: 240px;
+	position: absolute;
+	left: 240px;
+	top: 118px;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor {
+	/*background-color: #ddd;*/
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #000;
+	padding: 0 5px;
+	font-size: 14pt;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	/*background-color: #ff0;*/
+	margin-right: 5px;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor:hover {
+	/*background-color: #ffa;*/
+}
+/*--------------------------------------------------*/
+
+.fixed_elements .left_menu ul .theme:hover .theme_submenu {
+	display: block;
+}
+.fixed_elements .left_menu ul .theme .theme_submenu {
+	display: none;
+	width: 240px;
+	/*background-color: #777;*/
+	position: absolute;
+	left: 240px;
+	top: 154px;
+}
+.fixed_elements .left_menu ul .theme .theme_submenu li:hover {
+	/*background-color: #fdf*/
+}
+/*----------------------------------------------------*/
+.fixed_elements .left_menu ul .settings_menu:hover .settings_submenu {
+	display: block;
+}
+.fixed_elements .left_menu ul .settings_menu .settings_submenu {
+	display: none;
+	width: 240px;
+	/*background-color: #777;*/
+	position: absolute;
+	left: 240px;
+	top: 190px;
+}
+.fixed_elements .left_menu ul .settings_menu .settings_submenu li:hover {
+	/*background-color: #f57;*/
+	
+}
+/*-------Menu_end----------*/

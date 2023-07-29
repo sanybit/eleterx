@@ -1,0 +1,32 @@
+@import url("reset.css");
+@import url("fonts.css");
+@import url("left.css");
+@import url("center.css");
+@import url("right.css");
+@import url("adaptation.css");
+@import url("elements.css");
+@import url("color.css");
+
+.clear {
+	clear: both;
+}
+
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	/*background-color: #CDE9FA;*/
+	display: flex;
+}
+
+.rubber {
+	width: 82%;
+	display: flex;
+}
+
+/*----color scheme-----
+A - #3F9499 #95ADAA #C4FFDB
+B - #A5E2E6 #CAFAF3 #AFE3DE
+C - #E3D1B8 #F9E0BC #CDE9FA
+D - #3C5696 #7278AD #919CE6
+E - #91A9E6 #B1B8FA #AD82FD
+----------------------*/

@@ -1,0 +1,53 @@
+@media (max-width: 1050px) {
+	.center footer .textarea {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 860px) {
+	.fixed_elements .setting {
+		display: none;
+	}
+}
+
+@media (max-width: 860px) {
+	.right_basic {
+		display: none;
+	}
+	.center footer .textarea {
+		max-width: 85%;
+	}
+}
+
+@media (max-width: 640px) {
+	.center footer .textarea {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 550px) {
+	.left {
+		display: none;
+	}
+	.center header .name  {
+		margin-left: 40px;
+	}
+	.fixed_elements .down {
+		left: 5px !important;
+	}
+	.fixed_elements .left_menu {
+		width: 180px !important;
+	}
+	.fixed_elements .left_menu ul .chat .chat_submenu {
+		width: 180px !important;
+		left: 180px !important;
+	}
+	.fixed_elements .left_menu ul .theme .theme_submenu {
+		width: 180px !important;
+		left: 180px !important;
+	}
+	.fixed_elements .left_menu ul .settings_menu .settings_submenu {
+		width: 180px !important;
+		left: 180px !important;
+	}
+}

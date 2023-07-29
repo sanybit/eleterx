@@ -1,0 +1,57 @@
+
+.right_basic {
+	min-width: 240px;
+}
+
+.right_basic h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+
+.right_basic .info {
+	width: 100%;
+	position: fixed;
+	/*background-color: #ddd;*/
+	margin-top: 55px;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0 0 5px #555;
+}
+
+.right_basic .info .interlocutor {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+
+.right_basic .info .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	/*background-color: #0f0;*/
+	margin-right: 5px;
+}
+
+.right_basic .info .interlocutor .login {
+	font-size: 14pt;
+}
+
+.right_basic .settings {
+	width: 100%;
+	position: fixed;
+	/*background-color: #ddd;*/
+	margin-top: 164px;
+	padding: 10px;
+	box-shadow: 0 0 5px #555;
+	border-radius: 3px;
+}
+
+.right_basic .settings .key {
+	width: 220px;
+	height: 100px;
+	/*background-color: #aaa;*/
+	border-radius: 5px;
+}
