@@ -1,0 +1,292 @@
+/*----color scheme-----
+A - #3F9499 #95ADAA #C4FFDB
+B - #A5E2E6 #CAFAF3 #AFE3DE
+C - #E3D1B8 #F9E0BC #CDE9FA
+D - #3C5696 #7278AD #919CE6
+E - #91A9E6 #B1B8FA #AD82FD
+----------------------*/
+
+/*----Цвет фона----*/
+body {
+	background-color: #bababa;
+}
+/*Решение проблемы полосы с низу при прокрутке*/
+body:before {
+    content: '';
+    background: url("../gallery/les.jpeg") no-repeat;
+	background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -60px;
+    z-index: -1;
+}
+
+/*----Цвет шапки с лева----*/
+.left header {
+	background-color: #1e1f24;
+}
+
+/*----Цвет поиска----*/
+.left header form input[name="search"] {
+	background-color: #595b68; /*Фон*/
+	color: #bababa; /*Шрифт*/
+	font-family: "Noah";
+}
+.left header form input[name="search"]:hover {
+	box-shadow: 0px 0px 5px 0px #aaa; /*Тень*/
+}
+
+/*----Цвет активного чата----*/
+.left section .active {
+	background-color: #a8abba;
+	font-family: "Geologica_weit";
+}
+
+/*----Цвет шапки в центре----*/
+.center header {
+	background-color: #1e1f24;
+	font-family: "Geologica_weit";
+	color: white;
+}
+
+/*----Цвет фона даты----*/
+.center section h3 {
+	background-color: #636363;
+	box-shadow: 0 0 5px #000;
+	font-family: "Geologica_weit";
+	color: white;
+}
+
+/*----Цвет приходящего сообщения----*/
+.center section .sender span {
+	background-color: #454545; /*Фон*/
+	box-shadow: 2px 2px 5px #555; /*Тень*/
+	font-family: "Lineyka";
+	color: #ececec;
+}
+
+/*----Цвет исходящего сообщения----*/
+.center section .recipient span {
+	background-color: #636363; /*Фон*/
+	box-shadow: 2px 2px 5px #000; /*Тень*/
+	font-family: "Lineyka";
+	color: #ececec;
+}
+
+/*----Цвет фона написать сообщение----*/
+.center footer {
+	background-color: #1e1f24;
+	font-family: "Geologica_weit";
+}
+
+/*----Цвет поля ввода написать сообщение----*/
+.center footer .textarea {
+	background-color: #595b68; /*Фон*/
+	color: #bababa; /*Шрифт*/
+}
+.center footer .textarea:focus-visible {
+  border: 2px solid #FFFFFF;
+  outline: none;
+  box-shadow: inset 0px 0px 8px 0px #888; /*Тень*/
+}
+
+/*----Цвет фона инфо с права----*/
+.right_basic .info {
+	background-color: #636363;
+	font-family: "Geologica_weit";
+	box-shadow: 1px 1px 10px #000; /*Тень*/
+	color: white;
+}
+
+/*----Цвет фона настроек с права----*/
+.right_basic .settings {
+	background-color: #454545;
+	font-family: "Geologica_weit";
+	box-shadow: 1px 1px 10px #000; /*Тень*/
+	color: white;
+}
+
+/*----Цвет поля ввода ключа----*/
+.right_basic .settings .key {
+	background-color: #343434;
+	font-family: "Geologica_weit";
+	padding: 5px;
+	color: white;
+}
+.right_basic .settings .key:focus-visible {
+  border: 2px solid #FFFFFF;
+  outline: none;
+  box-shadow: inset 0px 0px 8px 0px #888; /*Тень*/
+}
+
+
+/*----Цвет фона аватарки с лева----*/
+.left section .interlocutor .avatar {
+	background-color: #ffffff;
+	font-family: "Geologica_weit";
+	color: white;
+	background: url("../gallery/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+
+/*----Цвет фона аватарки с права----*/
+.right_basic .info .interlocutor .avatar {
+	background-color: #ffffff;
+	background: url("../gallery/profile.jpeg") no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+/*----Цвет меню выезжающего с права----*/
+.fixed_elements .right .info {
+	background-color: #636363; /*Фон*/
+	box-shadow: 0 0 5px #000; /*Тень*/
+	font-family: "Geologica_weit";
+}
+
+/*----Цвет фона аватарки с права в выезжающем меню----*/
+.fixed_elements .right .info .interlocutor .avatar {
+	background-color: #ffffff;
+	background: url("../gallery/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+
+/*----Цвет меню шифрование выезжающего с права----*/
+.fixed_elements .right .settings {
+	background-color: #454545; /*Фон*/
+	box-shadow: 0 0 5px #000; /*Тень*/
+}
+
+/*----Цвет поля ввода шифрование выезжающего с права----*/
+.fixed_elements .right .settings .key {
+	background-color: #343434;
+	font-family: "Geologica_weit";
+	
+}
+.fixed_elements .right .settings .key:focus-visible {
+  border: 2px solid #FFFFFF;
+  outline: none;
+  box-shadow: inset 0px 0px 8px 0px #888; /*Тень*/
+}
+
+/*----Цвет точки на кнопке вниз----*/
+.fixed_elements .down .score {
+	background-color: rgb(255, 0, 0, 0.6);
+}
+
+/*----Цвет фона кнопки вниз----*/
+.fixed_elements .down a {
+	background-color: rgb(100, 100, 100, 0.8);
+	font-family: "Geologica_weit";
+	color: #fff;
+}
+
+/*----Цвет фона выезжающего меню с лева----*/
+.fixed_elements .left_menu {
+	background-color: #9a9caa;
+	box-shadow: 0 0 5px #000;
+	font-family: "Geologica_weit";
+}
+
+/*----Цвет фона выезжающего меню с лева в профиле----*/
+.fixed_elements .left_menu .profile {
+	background-color: #474747;
+	color: white;
+}
+
+/*----Цвет фона аватарки выезжающего меню с лева в профиле----*/
+.fixed_elements .left_menu .profile .avatar {
+	background-color: #ffffff;
+	color: white;
+	background: url("../gallery/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+
+/*----Цвет фона подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul li:hover {
+	background-color: #5d5d5d;
+	font-family: "Geologica_weit";
+	color: white;
+}
+
+/*----Цвет фона 2 в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor {
+	background-color: #777;
+	color: white;
+}
+
+/*----Цвет фона 2 аватарки выезжающего меню с лева----*/
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor .avatar {
+	background-color: #ffffff;
+	background: url("../gallery/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+
+/*----Цвет фона 2 подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor:hover {
+	background-color: #898989;
+}
+
+/*----Цвет фона 3 в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .theme .theme_submenu {
+	background-color: #777;
+}
+
+/*----Цвет фона 3 подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .theme .theme_submenu li:hover {
+	background-color: #898989;
+}
+
+/*----Цвет фона 3 в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .settings_menu .settings_submenu {
+	background-color: #777;
+}
+
+/*----Цвет фона 4 подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .settings_menu .settings_submenu li:hover {
+	background-color: #898989;
+}
+
+/*Галки*/
+i.check {
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate( 45deg);
+  margin-left: 4px;
+}
+
+i.check2 {
+	position: relative;
+	left: -6px;
+}
+
+/*Цвет стрелки отправить*/
+.center footer input[name="submit_send"] {
+    border-left: 20px solid #9c9c9c;
+}
+.menus {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+.setting {
+	color: white;
+	font-size: 35px;
+	font-weight: 800;
+}
+
+/*плавный скролл*/
+.center section {
+	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+/*Стили применяются только на устройствах с тач*/
+@media (pointer:coarse){
+	
+}
