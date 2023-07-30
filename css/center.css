@@ -1,0 +1,115 @@
+
+/*-----center-----*/
+
+.center {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	min-height: 100vh;
+	position: relative;
+	box-shadow: -1px 0 4px #555;
+}
+
+.center header {
+	width: 100%;
+	height: 35px;
+	/*background-color: #919CE6;*/
+	display: flex;
+	padding: 10px 20px;
+	position: fixed;
+	z-index: 100;
+}
+
+.center header .name p {
+	line-height: 130%;
+}
+
+.center section {
+	padding: 65px 10px 50px;
+}
+
+.center section h3 {
+	/*background-color: #ccc;*/
+	padding: 5px;
+	width: 90px;
+	margin: 0 auto 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.center section .message {
+	line-height: 130%;
+}
+
+.center section .sender {
+	width: 80%;
+}
+
+.center section .sender span {
+	display: inline-block;
+	/*background-color: #ccf;*/
+	padding: 10px;
+	border-radius: 20px 20px 20px 0;
+	margin-bottom: 10px;
+	/*box-shadow: 2px 2px 5px #555;*/
+}
+
+.center section .sender .time {
+	text-align: right;
+}
+
+.center section .recipient {
+	text-align: right;
+	padding-left: 20%;
+	
+}
+
+.center section .recipient .time {
+	text-align: right;
+	
+}
+
+.center section .recipient span {
+	display: inline-block;
+	/*background-color: #aaf;*/
+	padding: 10px;
+	border-radius: 20px 20px 0 20px;
+	margin-bottom: 10px;
+	text-align: left;
+	/*box-shadow: 2px 2px 5px #55f;*/
+}
+
+.center footer {
+	width: 98%;
+	min-height: 35px;
+	/*background-color: #fff;*/
+	padding: 0 1% 5px;
+	position: absolute;
+	bottom: 0;
+}
+
+.center footer .textarea {
+	/*background-color: #abf;*/
+	border-radius: 5px;
+	font-size: 18px;
+	/*color: #000;*/
+	max-width: 90%;
+	padding: 8px;
+	margin-top: 5px;
+}
+
+.center footer input[name="submit_send"] {
+	background-color: #1e1f24;
+	border: none;
+	width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid #6E18C0;
+	position: absolute;
+	right: 5px;
+	bottom: 7px;
+}
+
+.center footer input[name="submit_send"]:hover {
+	cursor: pointer;
+}
