@@ -11,6 +11,7 @@ body {
 	background-color: #c9ccde;
 	background: url("../gallery/les.jpeg") no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 /*----Цвет шапки с лева----*/
