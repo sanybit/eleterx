@@ -1,0 +1,706 @@
+.clear {
+	clear: both;
+}
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	display: flex;
+	/*----в теме----*/
+	background: linear-gradient(45deg, #3e4152, #4e5368 30%, #656b86);
+	background-attachment: fixed;
+}
+/*Решение проблемы полосы с низу при прокрутке*/
+body:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -60px;
+    z-index: -1;
+}
+.rubber {
+	width: 82%;
+	display: flex;
+}
+
+/*-----left-----*/
+.left {
+	min-width: 240px;
+	position: relative;
+}
+.left .contacts {
+	width: 240px;
+	position: fixed;
+}
+.left header {
+	height: 35px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	/*----в теме----*/
+	background-color: #3a405a;
+	box-shadow: 0px 0px 5px #000;
+}
+.left header form {
+	position: relative;
+	margin-left: 50px;
+}
+.left header form input[name="search"] {
+	font-size: 16px;
+	width: 160px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	padding-left: 5px;
+	/*----в теме----*/
+	background-color: #dbdbdb;
+	color: #656565;
+	font-family: "Noah";
+}
+.left header form input[name="search"]:hover {
+	/*----в теме----*/
+	box-shadow: 0px 0px 5px 0px #aaa;
+}
+.left header form input[name="submit_search"] {
+	background: url("/icons/eleterx/search.svg") no-repeat;
+	width: 32px;
+	height: 32px;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.left header form input[name="submit_search"]:hover {
+	cursor: pointer;
+}
+.left section .interlocutor {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+	font-size: 14pt;
+}
+.left section .active {
+	/*----в теме----*/
+	background-color: #8e97b8;
+	font-family: "Geologica_weit";
+	box-shadow: 0px 0px 5px #000;
+	color: white;
+}
+.left section .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	margin-right: 5px;
+	/*----в теме----*/
+	background-color: #ffffff;
+	font-family: "Geologica_weit";
+	color: white;
+	background: url("/icons/eleterx/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+.left section .interlocutor .login:hover {
+	cursor: pointer;
+}
+
+/*-----center-----*/
+.center {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	box-shadow: -1px 0 4px #555;
+}
+.center header {
+	width: 100%;
+	height: 35px;
+	display: flex;
+	padding: 10px 20px;
+	position: fixed;
+	z-index: 100;
+	/*----в теме----*/
+	background-color: #3a405a;
+	font-family: "Geologica_weit";
+	color: white;
+	box-shadow: 0 0 5px #000;
+}
+.center header .name p {
+	line-height: 130%;
+}
+.center section {
+	padding: 65px 10px 50px;
+}
+.center section h3 {
+	padding: 5px;
+	width: 100px;
+	margin: 0 auto 10px;
+	text-align: center;
+	border-radius: 5px;
+	/*----в теме----*/
+	background-color: #bdc2d6;
+	background: linear-gradient(45deg, #7e92fa, #9cabfa 30%, #b4bffa);
+	box-shadow: 0 0 5px #000;
+	font-family: "Geologica_weit";
+	color: black;
+}
+.center section .message {
+	line-height: 130%;
+}
+.center section .sender {
+	width: 80%;
+}
+.center section .sender span {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px 20px 20px 0;
+	margin-bottom: 10px;
+	/*----в теме----*/
+	background: linear-gradient(45deg, #a3acd9, #b8c2f4 30%, #f4f4f4);
+	box-shadow: 2px 2px 5px #555;
+	font-family: "Lineyka";
+	color: black;
+}
+.center section .sender .time {
+	text-align: right;
+}
+.center section .recipient {
+	text-align: right;
+	padding-left: 20%;
+	
+}
+.center section .recipient .time {
+	text-align: right;
+	
+}
+.center section .recipient span {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px 20px 0 20px;
+	margin-bottom: 10px;
+	text-align: left;
+	/*----в теме----*/
+	background: linear-gradient(45deg, #7e92fa, #9cabfa 30%, #b4bffa);
+	box-shadow: 2px 2px 5px #000;
+	font-family: "Lineyka";
+	color: black;
+}
+.center footer {
+	width: 98%;
+	min-height: 35px;
+	padding: 0 1% 5px;
+	position: absolute;
+	bottom: 0;
+	/*----в теме----*/
+	background-color: #3a405a;
+	font-family: "Geologica_weit";
+	box-shadow: 0 0 5px #000;
+}
+.center footer .textarea {
+	border-radius: 5px;
+	font-size: 18px;
+	max-width: 90%;
+	padding: 8px;
+	margin-top: 5px;
+	/*----в теме----*/
+	background-color: #c0c0c0;
+	color: #000;
+}
+.center footer .textarea:focus-visible {
+	/*----в теме----*/
+	height: 14px;
+	border: 2px solid #FFFFFF;
+	outline: none;
+	box-shadow: inset 0px 0px 8px 0px #888;
+}
+.center footer button {
+	border: none;
+	width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+	/*----в теме----*/
+	border-left: 20px solid #c0c0c0;
+	background-color: #3a405a;
+}
+.center footer button:hover {
+	cursor: pointer;
+}
+
+/*-----right-----*/
+.right_basic {
+	min-width: 240px;
+}
+.right_basic h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+.right_basic .info {
+	width: 100%;
+	position: fixed;
+	margin-top: 55px;
+	padding: 10px;
+	border-radius: 3px;
+	/*----в теме----*/
+	background-color: #878daa;
+	font-family: "Geologica_weit";
+	box-shadow: 1px 1px 10px #000;
+	color: white;
+}
+.right_basic .info .interlocutor {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+.right_basic .info .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	margin-right: 5px;
+	/*----в теме----*/
+	background-color: #ffffff;
+	background: url("/icons/eleterx/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+.right_basic .info .interlocutor .login {
+	font-size: 14pt;
+}
+.right_basic .settings {
+	width: 100%;
+	position: fixed;
+	margin-top: 164px;
+	padding: 10px;
+	border-radius: 3px;
+	/*----в теме----*/
+	background-color: #6f748c;
+	font-family: "Geologica_weit";
+	box-shadow: 1px 1px 10px #000;
+	color: white;
+}
+.right_basic .settings .key {
+	width: 210px;
+	height: 100px;
+	border-radius: 5px;
+	/*----в теме----*/
+	background-color: #484b5a;
+	font-family: "Geologica_weit";
+	padding: 5px;
+}
+.right_basic .settings .key:focus-visible {
+	/*----в теме----*/
+	border: 2px solid #FFFFFF;
+	outline: none;
+	box-shadow: inset 0px 0px 8px 0px #888;
+}
+
+/*-----elements-----*/
+.fixed_elements .left_menu .menu {
+	position: fixed;
+	top: 8px;
+	left: 10px;
+	z-index: 102;
+	transition-property: top;
+	transition-duration: 0.5s;
+}
+.fixed_elements .left_menu:hover {
+	left: 0;
+	transition-property: left;
+	transition-duration: 0.5s;
+}
+.fixed_elements .left_menu:hover .menu {
+	top: -30px;
+	transition-duration: 0.5s;
+	
+}
+/*------Setting_start--------*/
+.fixed_elements .right .setting {
+	position: fixed;
+	top: 10px;
+	right: 20px;
+	z-index: 101;
+}
+.fixed_elements .right .setting:hover {
+	cursor: pointer;
+}
+.fixed_elements .right {
+	width: 240px;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	z-index: 110;
+	transition-property: right;
+	transition-duration: 0.5s;
+}
+.fixed_elements .right:hover {
+	right: 0;
+	transition-duration: 0.5s;
+}
+.fixed_elements .right .hover {
+	width: 100%;
+	height: 55px;
+}
+.fixed_elements .right h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+.fixed_elements .right .info {
+	width: 100%;
+	position: fixed;
+	padding: 10px;
+	border-radius: 3px;
+	/*----в теме----*/
+	background-color: #878daa;
+	box-shadow: 0 0 5px #000;
+	font-family: "Geologica_weit";
+	color: white;
+}
+.fixed_elements .right .info .interlocutor {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+}
+.fixed_elements .right .info .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	margin-right: 5px;
+	/*----в теме----*/
+	background-color: #ffffff;
+	background: url("/icons/eleterx/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+.fixed_elements .right .info .interlocutor .login {
+	font-size: 14pt;
+}
+.fixed_elements .right .settings {
+	width: 100%;
+	position: fixed;
+	margin-top: 108px;
+	padding: 10px;
+	border-radius: 3px;
+	/*----в теме----*/
+	background-color: #6f748c;
+	box-shadow: 0 0 5px #000;
+	color: white;
+}
+.fixed_elements .right .settings .key {
+	padding: 4px;
+	width: 210px;
+	height: 100px;
+	border-radius: 5px;
+	/*----в теме----*/
+	background-color: #484b5a;
+	font-family: "Geologica_weit";
+}
+.fixed_elements .right .settings .key:focus-visible {
+	/*----в теме----*/
+	border: 2px solid #FFFFFF;
+	outline: none;
+	box-shadow: inset 0px 0px 8px 0px #888;
+}
+.fixed_elements .right .settings .key:hover {
+	cursor: pointer;
+}
+/*------Setting_end--------*/
+.fixed_elements .down {
+	position: fixed;
+	bottom: 50px;
+	left: 245px;
+}
+.fixed_elements .down .score {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	position: relative;
+	top: 10px;
+	left: 28px;
+	/*----в теме----*/
+	background-color: rgb(255, 0, 0, 0.6);
+}
+.fixed_elements .down a {
+	display: block;
+	width: 40px;
+	height: 28px;
+	border-radius: 20px;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 12px;
+	/*----в теме----*/
+	background-color: rgb(100, 100, 100, 0.8);
+	font-family: "Geologica_weit";
+	color: #fff;
+}
+/*-------Menu_start--------*/
+.fixed_elements .left_menu {
+	width: 240px;
+	position: fixed;
+	left: -245px;
+	top: 0;
+	z-index: 110;
+	transition-property: left;
+	transition-duration: 0.5s;
+	/*----в теме----*/
+	background-color: #717791;
+	box-shadow: 0 0 5px #000;
+	font-family: "Geologica_weit";
+	color: white;
+}
+.fixed_elements .left_menu .profile {
+	display: flex;
+	margin-bottom: 40px;
+	padding: 20px 5px 20px 30px;
+	/*----в теме----*/
+	background-color: #4f5365;
+	color: white;
+}
+.fixed_elements .left_menu .profile .login {
+	font-size: 18px;
+	margin: 10px 20px 0 10px;
+}
+.fixed_elements .left_menu .profile .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	margin-right: 5px;
+	/*----в теме----*/
+	background-color: #ffffff;
+	color: white;
+	background: url("/icons/eleterx/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+.fixed_elements .left_menu .profile .avatar:hover {
+	cursor: pointer;
+}
+.fixed_elements .left_menu .profile .avatar img{
+	background-color: #656b86;
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+}
+.fixed_elements .left_menu .profile #file_avatar{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.fixed_elements .left_menu ul {
+	margin-bottom: 60px;
+}
+.fixed_elements .left_menu ul li {
+	font-size: 16px;
+	padding: 10px 0 10px 30px;
+}
+.fixed_elements .left_menu ul li:hover {
+	cursor: pointer;
+	/*----в теме----*/
+	background-color: #a8b2d9;
+	font-family: "Geologica_weit";
+	color: white;
+}
+/*--------------------------------------------------*/
+.fixed_elements .left_menu ul .chat:hover .chat_submenu {
+	display: block;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu {
+	display: none;
+	width: 240px;
+	position: absolute;
+	left: 240px;
+	top: 118px;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #000;
+	padding: 0 5px;
+	font-size: 14pt;
+	/*----в теме----*/
+	background-color: #8388a5;
+	color: white;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor .avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 10px;
+	margin-right: 5px;
+	/*----в теме----*/
+	background-color: #ffffff;
+	background: url("/icons/eleterx/profile.jpeg") no-repeat;
+	background-size: cover;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .active {
+	/*----в теме----*/
+	background-color: #979dbd;
+	color: black;
+}
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor:hover {
+	/*----в теме----*/
+	background-color: #979dbd;
+	color: black;
+}
+/*--------------------------------------------------*/
+.fixed_elements .left_menu ul .theme:hover .theme_submenu {
+	display: block;
+}
+.fixed_elements .left_menu ul .theme .theme_submenu {
+	display: none;
+	width: 240px;
+	position: absolute;
+	left: 240px;
+	top: 154px;
+	/*----в теме----*/
+	background-color: #8388a5;
+}
+.fixed_elements .left_menu ul .theme .theme_submenu li:hover {
+	/*----в теме----*/
+	background-color: #979dbd;
+	color: black;
+}
+/*----------------------------------------------------*/
+.fixed_elements .left_menu ul .settings_menu:hover .settings_submenu {
+	display: block;
+}
+.fixed_elements .left_menu ul .settings_menu .settings_submenu {
+	display: none;
+	width: 240px;
+	position: absolute;
+	left: 240px;
+	top: 190px;
+	/*----в теме----*/
+	background-color: #8388a5;
+}
+.fixed_elements .left_menu ul .settings_menu .settings_submenu li:hover {
+	/*----в теме----*/
+	background-color: #979dbd;
+	color: black;
+}
+
+/*-----Галки------*/
+i.check {
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate( 45deg);
+  margin-left: 4px;
+}
+
+i.check2 {
+	position: relative;
+	left: -6px;
+}
+/*--------Значок меню--------*/
+.menus {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+}
+/*------Значок настройки------*/
+.setting {
+	color: white;
+	font-size: 35px;
+	font-weight: 800;
+}
+/*--------Стрелка вниз--------*/
+.arrow-8 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+	margin-top: -5px;
+}
+.arrow-8:before,
+.arrow-8:after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    animation: arrow-8 3s linear infinite;
+}
+.arrow-8:after {
+    animation: arrow-8 3s linear infinite -1.5s;
+}
+@keyframes arrow-8 {
+    0% {
+        opacity: 0;
+        transform: translate(0, -5.3px) rotate(-45deg);
+    }
+    10%, 90% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;  
+        transform: translate(0, 0) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 5.3px) rotate(-45deg);
+    }
+}
+
+/*-------adaptation------*/
+@media (max-width: 1050px) {
+	.center footer .textarea {
+		max-width: 80%;
+	}
+}
+@media (min-width: 860px) {
+	.fixed_elements .setting {
+		display: none;
+	}
+}
+@media (max-width: 860px) {
+	.right_basic {
+		display: none;
+	}
+	.center footer .textarea {
+		max-width: 85%;
+	}
+}
+@media (max-width: 640px) {
+	.center footer .textarea {
+		max-width: 80%;
+	}
+}
+@media (max-width: 550px) {
+	.left {
+		display: none;
+	}
+	.center header .name  {
+		margin-left: 40px;
+	}
+	.fixed_elements .down {
+		left: 5px !important;
+	}
+	.fixed_elements .left_menu {
+		width: 180px !important;
+	}
+	.fixed_elements .left_menu ul .chat .chat_submenu {
+		width: 180px !important;
+		left: 180px !important;
+	}
+	.fixed_elements .left_menu ul .theme .theme_submenu {
+		width: 180px !important;
+		left: 180px !important;
+	}
+	.fixed_elements .left_menu ul .settings_menu .settings_submenu {
+		width: 180px !important;
+		left: 180px !important;
+	}
+}

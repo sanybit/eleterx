@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Geologica";
+	/* Браузер сначала попробует найти шрифт локально */
+	src: local("Geologica"),
+	/* Если не получилось, загрузит ttf */
+	url("/fonts/eleterx/Geologica.ttf") format("ttf"),
+	/* Если браузер не поддерживает ttf, загрузит woff2 */
+	url("/fonts/eleterx/Geologica.woff2") format("woff2"),
+	/* Если браузер не поддерживает woff2, загрузит woff */
+	url("/fonts/eleterx/Geologica.woff") format("woff");
+}
+@font-face {
+	font-family: "Geologica_weit";
+	src: local("Geologica_weit"),
+	url("/fonts/eleterx/Geologica_weit.ttf") format("ttf"),
+	url("/fonts/eleterx/Geologica_weit.woff2") format("woff2"),
+	url("/fonts/eleterx/Geologica_weit.woff") format("woff");
+}
+@font-face {
+	font-family: "Lineyka";
+	src: local("Lineyka"),
+	url("/fonts/eleterx/Lineyka.ttf") format("ttf"),
+	url("/fonts/eleterx/Lineyka.woff2") format("woff2"),
+	url("/fonts/eleterx/Lineyka.woff") format("woff");
+}
+@font-face {
+	font-family: "Noah";
+	src: local("Noah"),
+	url("/fonts/eleterx/Noah.ttf") format("ttf"),
+	url("/fonts/eleterx/Noah.woff2") format("woff2"),
+	url("/fonts/eleterx/Noah.woff") format("woff");
+}
