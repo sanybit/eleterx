@@ -1,0 +1,158 @@
+body {
+	background-color: #bababa;
+}
+/*Решение проблемы полосы с низу при прокрутке*/
+body:before {
+    background: url("/gallery/les.jpeg") no-repeat;
+	background-size: cover;
+}
+/*----Цвет шапки с лева----*/
+.left header {
+	background-color: #1e1f24;
+}
+/*----Цвет поиска----*/
+.left header form input[name="search"] {
+	background-color: #595b68; /*Фон*/
+	color: #bababa; /*Шрифт*/
+}
+.left header form input[name="search"]:hover {
+	
+}
+/*----Цвет активного чата----*/
+.left section .active {
+	background-color: #a8abba;
+}
+/*----Цвет фона аватарки с лева----*/
+.left section .interlocutor .avatar {
+	
+}
+/*----Цвет шапки в центре----*/
+.center header {
+	background-color: #1e1f24;
+}
+/*----Цвет фона даты----*/
+.center section h3 {
+	background: none;
+	background-color: #636363;
+	color: white;
+}
+/*----Цвет приходящего сообщения----*/
+.center section .sender span {
+	background: none;
+	background-color: #454545; /*Фон*/
+	color: #ececec;
+}
+/*----Цвет исходящего сообщения----*/
+.center section .recipient span {
+	background: none;
+	background-color: #636363; /*Фон*/
+	color: #ececec;
+}
+/*----Цвет фона написать сообщение----*/
+.center footer {
+	background-color: #1e1f24;
+}
+/*----Цвет поля ввода написать сообщение----*/
+.center footer .textarea {
+	background-color: #595b68; /*Фон*/
+	color: #bababa; /*Шрифт*/
+}
+.center footer .textarea:focus-visible {
+	
+}
+/*Цвет стрелки отправить*/
+.center footer input[name="submit_send"] {
+    border-left: 20px solid #9c9c9c;
+	background-color: #1e1f24;
+}
+/*----Цвет фона инфо с права----*/
+.right_basic .info {
+	background-color: #636363;
+}
+/*----Цвет фона аватарки с права----*/
+.right_basic .info .interlocutor .avatar {
+	color: white;
+}
+/*----Цвет фона настроек с права----*/
+.right_basic .settings {
+	background-color: #454545;
+}
+/*----Цвет поля ввода ключа----*/
+.right_basic .settings .key {
+	background-color: #343434;
+	color: white;
+}
+.right_basic .settings .key:focus-visible {
+	
+}
+/*----Цвет меню выезжающего с права----*/
+.fixed_elements .right .info {
+	background-color: #636363; /*Фон*/
+}
+/*----Цвет фона аватарки с права в выезжающем меню----*/
+.fixed_elements .right .info .interlocutor .avatar {
+	
+}
+/*----Цвет меню шифрование выезжающего с права----*/
+.fixed_elements .right .settings {
+	background-color: #454545; /*Фон*/
+}
+/*----Цвет поля ввода шифрование выезжающего с права----*/
+.fixed_elements .right .settings .key {
+	background-color: #343434;
+}
+.fixed_elements .right .settings .key:focus-visible {
+	
+}
+/*----Цвет точки на кнопке вниз----*/
+.fixed_elements .down .score {
+	
+}
+/*----Цвет фона кнопки вниз----*/
+.fixed_elements .down a {
+	
+}
+/*----Цвет фона выезжающего меню с лева----*/
+.fixed_elements .left_menu {
+	background-color: #9a9caa;
+}
+/*----Цвет фона выезжающего меню с лева в профиле----*/
+.fixed_elements .left_menu .profile {
+	background-color: #474747;
+}
+/*----Цвет фона аватарки выезжающего меню с лева в профиле----*/
+.fixed_elements .left_menu .profile .avatar {
+	
+}
+/*----Цвет фона подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul li:hover {
+	background-color: #5d5d5d;
+}
+/*----Цвет фона 2 в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor {
+	background-color: #777;
+}
+/*----Цвет фона 2 аватарки выезжающего меню с лева----*/
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor .avatar {
+	
+}
+/*----Цвет фона 2 подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .chat .chat_submenu .interlocutor:hover {
+	background-color: #898989;
+}
+/*----Цвет фона 3 в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .theme .theme_submenu {
+	background-color: #777;
+}
+/*----Цвет фона 3 подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .theme .theme_submenu li:hover {
+	background-color: #898989;
+}
+/*----Цвет фона 3 в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .settings_menu .settings_submenu {
+	background-color: #777;
+}
+/*----Цвет фона 4 подсветки в выезжающем меню с лева----*/
+.fixed_elements .left_menu ul .settings_menu .settings_submenu li:hover {
+	background-color: #898989;
+}

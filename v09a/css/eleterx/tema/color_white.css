@@ -1,0 +1,59 @@
+/*----Цвет фона----*/
+body {
+	background: none;
+	background-color: #c9ccde;
+}
+/*----Цвет шапки с лева----*/
+.left header {
+	background-color: #1e1f24;
+}
+/*----Цвет поска----*/
+.left header form input[name="search"] {
+	background-color: #595b68;
+}
+/*----Цвет активного чата----*/
+.left section .active {
+	background-color: #a8abba;
+}
+/*----Цвет шапки в центре----*/
+.center header {
+	background-color: #1e1f24;
+}
+/*----Цвет фона даты----*/
+.center section h3 {
+	background: none;
+	background-color: #8b8d9a;
+}
+/*----Цвет фона приходящего сообщения----*/
+.center section .sender span {
+	background: none;
+	background-color: #72747e;
+}
+/*----Цвет фона исходящего сообщения----*/
+.center section .recipient span {
+	background: none;
+	background-color: #8b8d9a;
+}
+/*----Цвет фона написать сообщение----*/
+.center footer {
+	background-color: #1e1f24;
+}
+/*----Цвет поля ввода написать сообщение----*/
+.center footer .textarea {
+	background-color: #595b68;
+}
+.center footer input[name="submit_send"] {
+	background-color: #1e1f24; /*Фон стрелки отправить*/
+}
+/*----Цвет фона инфо с права----*/
+.right_basic .info {
+	background-color: #b0b3c3;
+}
+/*----Цвет фона настроек с права----*/
+.right_basic .settings {
+	background-color: #9a9caa;
+}
+/*----Цвет поля ввода ключа----*/
+.right_basic .settings .key {
+	background-color: #7c7e89;
+}
