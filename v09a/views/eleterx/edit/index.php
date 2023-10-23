@@ -246,7 +246,7 @@ echo '/*----Цвет фона----*/
 	
 }
 /*Цвет стрелки отправить*/
-.center footer input[name="submit_send"] {
+.center footer button {
 	/*border-left: 20px solid #c0c0c0;
 	background-color: #3a405a;*/
 	
