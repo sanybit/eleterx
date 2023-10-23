@@ -111,7 +111,7 @@
 	function sendIden(){
 		let formDataIden = document.createElement('form');
 		formDataIden.hidden = true;
-		formDataIden.action = 'http://todolist/<?php echo $parameters['url']; ?>';
+		formDataIden.action = 'http://j93766d2.beget.tech/<?php echo $parameters['url']; ?>';
 		formDataIden.method = 'POST';
 		formDataIden.innerHTML = "<input name='eleterx_login' value='" + localStorage.getItem('eleterx_login') + "'><input name='eleterx_password' value='" + localStorage.getItem('eleterx_password') + "'><input name='iden_canvas' value='" + localStorage.getItem('iden_canvas') + "'><input name='login_recipient' value='" + 'sanu' + "'><input name='theme_name' value='" + localStorage.getItem('theme_name') + "'>";
 		document.body.append(formDataIden); //перед отправкой формы, её нужно вставить в документ
