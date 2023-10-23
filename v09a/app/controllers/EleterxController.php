@@ -112,21 +112,27 @@ class EleterxController
 				}
 				if($_POST['button'] == 'registration') {
 					$login_ = htmlspecialchars($_POST['login']);
+					$iden_canvas_ = htmlspecialchars($_POST['iden_canvas']);
 					if(strlen($login_) < 3) {
 						echo 'Логин минимум 3 символа';
 						die; //прекратить выполнение текущего скрипта
 					}
-					if($user = Eleterx::checkingUser($_POST['login'], false, $_POST['iden_canvas'])) {
-						if($user['login'] == $_POST['login']) {
-							echo 'Логин занят';
-							die; //прекратить выполнение текущего скрипта
-						}
-						if($user['iden_canvas'] == $_POST['iden_canvas']) {
-							echo 'К устройству уже привязан аккаунт';
+					if(preg_match('/^[a-z0-9._-]+$/i', $login_)) {
+						if($user = Eleterx::checkingUser($_POST['login'], false, $_POST['iden_canvas'])) {
+							if(strcasecmp($user['login'], $login_) == 0) {
+								echo 'Логин занят';
+								die; //прекратить выполнение текущего скрипта
+							}
+							if($user['iden_canvas'] == $iden_canvas_) {
+								echo 'К устройству уже привязан аккаунт';
+								die; //прекратить выполнение текущего скрипта
+							}
+						}else {
+							echo Eleterx::addUser($_POST['login'], $_POST['password'], $_POST['iden_canvas']);
 							die; //прекратить выполнение текущего скрипта
 						}
 					}else {
-						echo Eleterx::addUser($_POST['login'], $_POST['password'], $_POST['iden_canvas']);
+						echo 'Только английские буквы и цифры';
 						die; //прекратить выполнение текущего скрипта
 					}
 				}
