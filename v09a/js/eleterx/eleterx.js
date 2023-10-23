@@ -209,7 +209,7 @@ function info() { //О программе
 	alert('EleterX: v0.9a (10.2023)\nВерсия для тестировщиков.\nПредложения и вопросы писать в чат eleterx');
 }
 
-function chat_active(chat) { //функция активации чата
+function chat_active(chat = 'chat_' + Chat) { //функция активации чата
 	Chat = chat.slice(5);
 	document.querySelectorAll(".chat_").forEach((chat_) => { //убираем активность со всех чатов
 	  chat_.classList.remove("active");
