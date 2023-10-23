@@ -92,8 +92,8 @@ body {
 	
 }
 /*Цвет стрелки отправить*/
-.center footer input[name="submit_send"] {
-    /*border-left: 20px solid #c0c0c0;
+.center footer button {
+	/*border-left: 20px solid #c0c0c0;
 	background-color: #3a405a;*/
 	
 }
