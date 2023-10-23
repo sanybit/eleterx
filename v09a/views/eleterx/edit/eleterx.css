@@ -278,7 +278,7 @@ body:before {
 	outline: none;
 	box-shadow: inset 0px 0px 8px 0px #888;
 }
-.center footer input[name="submit_send"] {
+.center footer button {
 	border: none;
 	width: 0;
     height: 0;
