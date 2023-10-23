@@ -42,7 +42,7 @@ body {
 .center footer .textarea {
 	background-color: #595b68;
 }
-.center footer input[name="submit_send"] {
+.center footer button {
 	background-color: #1e1f24; /*Фон стрелки отправить*/
 }
 /*----Цвет фона инфо с права----*/
