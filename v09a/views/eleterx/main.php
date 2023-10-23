@@ -19,7 +19,7 @@
 	</div>
 	<div class="center">
 		<header>
-			<div class="name">
+			<div class="name" onClick="chat_active()">
 				<p class="login login_">---</p>
 				<p class="time time_">был в сети:</p>
 			</div>
